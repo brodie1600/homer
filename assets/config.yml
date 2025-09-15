@@ -63,11 +63,14 @@ links:
     icon: "fas fa-home"
     url: "#"
   - name: "Police"
-    icon: "fas fa-file-alt"
+    icon: "fas fa-user-police"
     url: "#police"
   - name: "Fire"
-    icon: "fas fa-file-alt"
+    icon: "fas fa-truck-fire"
     url: "#fire"
+  - name: "Call-Taker"
+    icon: "fas fa-headset"
+    url: "#calltaker"
 
 # Services
 # First level array represent a group.

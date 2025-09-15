@@ -43,14 +43,17 @@ links:
     icon: "fas fa-home"
     url: "#"
   - name: "Police"
-    icon: "fas fa-file-alt"
+    icon: "fas fa-user-police"
     url: "#police"
   - name: "Fire"
-    icon: "fas fa-file-alt"
+    icon: "fas fa-truck-fire"
     url: "#fire"
+  - name: "Call-Taker"
+    icon: "fas fa-headset"
+    url: "#calltaker"
 
 services:
-  - name: "More apps on another page!"
+  - name: "This is the Police page"
     icon: "fas fa-cloud"
     items:
       - name: "Awesome app on a second page!"

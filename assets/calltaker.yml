@@ -53,7 +53,7 @@ links:
     url: "#calltaker"
 
 services:
-  - name: "This is the Fire page"
+  - name: "This is the Call-Taker page"
     icon: "fas fa-cloud"
     items:
       - name: "Awesome app on a second page!"
