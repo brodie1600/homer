@@ -1,0 +1,103 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+
+title: "Intranet"
+subtitle: "Tri-Com Central Dispatch"
+logo: "tclogo_trans.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: false
+
+# Optional theme customization
+theme: default  # keep default; we override via colors + stylesheet
+
+# Color palette
+colors:
+  light:
+    highlight-primary: "#fccd4b"   # header background, group title icons
+    highlight-secondary: "#d5ad2e" # navbar & tag color
+    highlight-hover: "#ffe07a"     # hover states, search input focus
+    background: "#f6f6f7"          # page background
+    card-background: "#ffffff"     # tile background
+    text: "#1f1f1f"                 # body text
+    text-header: "#131313"          # header text on gold
+    text-title: "#161616"           # tile title
+    text-subtitle: "#3a3a3a"        # tile subtitle
+    card-shadow: "rgba(0, 0, 0, 0.08)"
+    link: "#2f5597"                 # neutral, readable link color
+    link-hover: "#1b3b78"
+    # background-image: "assets/bg_light.webp"  # optional
+  dark:
+    highlight-primary: "#fccd4b"
+    highlight-secondary: "#d5ad2e"
+    highlight-hover: "#ffe07a"
+    background: "#0e0f10"           # near-black, low eye strain
+    card-background: "#1a1c1f"      # dark slate for tiles
+    text: "#e8e8e8"
+    text-header: "#0e0f10"          # dark text on gold header for contrast
+    text-title: "#fafafa"
+    text-subtitle: "#d8d8d8"
+    card-shadow: "rgba(0, 0, 0, 0.35)"
+    link: "#9ab6ff"                 # readable on dark
+    link-hover: "#ffe07a"
+    # background-image: "assets/bg_dark.webp"   # optional
+
+# Load a small CSS file for subtle tweaks (see below)
+stylesheet:
+  - "assets/style.css"
+
+# Optional message
+message:
+  #url: https://b4bz.io
+  #style: "is-danger" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "Test Announcement"
+  #icon: "fa fa-grin"
+  content: "This is a test announcement."
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+  - name: "Police"
+    icon: "fas fa-file-alt"
+    url: "#police"
+  - name: "Fire"
+    icon: "fas fa-file-alt"
+    url: "#fire"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Get started"
+        icon: "fa-solid fa-download"
+        subtitle: "Start using Homer in a few minutes"
+        tag: "setup"
+        url: "https://github.com/bastienwirtz/homer?tab=readme-ov-file#get-started"
+      - name: "Configuration"
+        icon: "fa-solid fa-sliders"
+        subtitle: "Configuration options documentation"
+        tag: "setup"
+        url: "https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md"
+      - name: "Theming"
+        icon: "fa-solid fa-palette"
+        subtitle: "Customize Homer appearance"
+        tag: "theming"
+        url: "https://github.com/bastienwirtz/homer/blob/main/docs/theming.md"
+      - name: "Smart cards"
+        icon: "fa-solid fa-palette"
+        subtitle: "Displays dynamic information or actions."
+        tag: "setup"
+        url: "https://github.com/bastienwirtz/homer/blob/main/docs/customservices.md"
+      - name: "Dashboard icons"
+        icon: "fa-solid fa-icons"
+        subtitle: "Dashboard icons"
+        tag: "setup"
+        url: "https://github.com/walkxcode/dashboard-icons"

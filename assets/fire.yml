@@ -1,0 +1,61 @@
+---
+# Additional page configuration
+
+# Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>). 
+# `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
+
+# Color palette
+colors:
+  light:
+    highlight-primary: "#fccd4b"   # header background, group title icons
+    highlight-secondary: "#d5ad2e" # navbar & tag color
+    highlight-hover: "#ffe07a"     # hover states, search input focus
+    background: "#f6f6f7"          # page background
+    card-background: "#ffffff"     # tile background
+    text: "#1f1f1f"                 # body text
+    text-header: "#131313"          # header text on gold
+    text-title: "#161616"           # tile title
+    text-subtitle: "#3a3a3a"        # tile subtitle
+    card-shadow: "rgba(0, 0, 0, 0.08)"
+    link: "#2f5597"                 # neutral, readable link color
+    link-hover: "#1b3b78"
+    # background-image: "assets/bg_light.webp"  # optional
+  dark:
+    highlight-primary: "#fccd4b"
+    highlight-secondary: "#d5ad2e"
+    highlight-hover: "#ffe07a"
+    background: "#0e0f10"           # near-black, low eye strain
+    card-background: "#1a1c1f"      # dark slate for tiles
+    text: "#e8e8e8"
+    text-header: "#0e0f10"          # dark text on gold header for contrast
+    text-title: "#fafafa"
+    text-subtitle: "#d8d8d8"
+    card-shadow: "rgba(0, 0, 0, 0.35)"
+    link: "#9ab6ff"                 # readable on dark
+    link-hover: "#ffe07a"
+    # background-image: "assets/bg_dark.webp"   # optional
+
+# This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
+message: 
+
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+  - name: "Police"
+    icon: "fas fa-file-alt"
+    url: "#police"
+  - name: "Fire"
+    icon: "fas fa-file-alt"
+    url: "#fire"
+
+services:
+  - name: "This is the third page"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Awesome app on a second page!"
+        logo: "assets/tools/sample.png"
+        subtitle: "Bookmark example"
+        tag: "app"
+        url: "https://www.reddit.com/r/selfhosted/"
+        target: "_blank"

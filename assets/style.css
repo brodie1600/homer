@@ -1,0 +1,59 @@
+:root {
+  /* to reference the primary gold directly */
+  --primary-gold: #fccd4b;
+}
+
+/* Search input: clearer affordance + better focus */
+.navbar .navbar-item .control .input,
+.navbar-item .control .input {
+  border-radius: 10px !important;
+  border: 1px solid transparent;
+}
+.navbar .navbar-item .control .input:focus,
+.navbar-item .control .input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px var(--highlight-hover, #ffe07a) !important;
+  border-color: var(--highlight-secondary, #d5ad2e) !important;
+}
+
+/* Tiles: slightly rounder corners + gentle lift on hover */
+section.services .service {
+  border-radius: 14px !important;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+section.services .service:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--card-shadow, rgba(0,0,0,0.1)) !important;
+}
+
+/* Service icons tint toward link color for consistency */
+section.services .service .icon i {
+  color: var(--link, #2f5597) !important;
+}
+section.services .service:hover .icon i {
+  color: var(--link-hover, #1b3b78) !important;
+}
+
+/* Tags: keep them readable with gold accent background */
+.tag.is-default,
+.tag {
+  background: var(--highlight-secondary, #d5ad2e) !important;
+  color: #111 !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+}
+
+/* Group headings: use primary gold icon color for quick scanning */
+.group-title .title i {
+  color: var(--highlight-primary, var(--primary-gold)) !important;
+}
+
+/* Reduce visual noise on very large grids */
+section.services .service .subtitle {
+  opacity: 0.9;
+}
+
+/* Optional: if your logo has light tones, keep it crisp on dark header */
+.dark header.header img,
+.dark .navbar img {
+  filter: none; /* adjust to 'brightness(0) invert(1)' if needed for contrast */
+}
