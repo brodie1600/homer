@@ -37969,6 +37969,13 @@
   .fa-user-headset {
     --fa: "";
   }
+  .fa-screen-users {
+    --fa: "";
+  }
+  .fa-books {
+    --fa: "";
+  }
+  
   .sr-only,
   .fa-sr-only {
     position: absolute;

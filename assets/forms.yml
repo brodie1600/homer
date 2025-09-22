@@ -1,17 +1,8 @@
 ---
-# Homepage configuration
-# See https://fontawesome.com/search for icons options
+# Additional page configuration
 
-title: "Intranet"
-subtitle: "Tri-Com Central Dispatch"
-logo: "tclogo_trans.png"
-# icon: "fas fa-skull-crossbones" # Optional icon
-
-header: true
-footer: false
-
-# Optional theme customization
-theme: default  # keep default; we override via colors + stylesheet
+# Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>). 
+# `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
 
 # Color palette
 colors:
@@ -44,20 +35,9 @@ colors:
     link-hover: "#ffe07a"
     # background-image: "assets/bg_dark.webp"   # optional
 
-# Load a small CSS file for subtle tweaks (see below)
-stylesheet:
-  - "assets/style.css"
+# This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
+message: 
 
-# Optional message
-message:
-  #url: https://b4bz.io
-  #style: "is-danger" # See https://bulma.io/documentation/components/message/#colors for styling options.
-  title: "Test Announcement"
-  #icon: "fa fa-grin"
-  content: "This is a test announcement."
-
-# Optional navbar
-# links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
   - name: "Home"
     icon: "fas fa-home"
@@ -93,36 +73,13 @@ links:
     icon: "fas fa-link"
     url: "#links"
 
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Applications"
+  - name: "This is the Call-Taker page"
     icon: "fas fa-cloud"
     items:
-      - name: "Get started"
-        icon: "fa-solid fa-download"
-        subtitle: "Start using Homer in a few minutes"
-        tag: "setup"
-        tastyle: "is-info"
-        url: "https://github.com/bastienwirtz/homer?tab=readme-ov-file#get-started"
-      - name: "Configuration"
-        icon: "fa-solid fa-sliders"
-        subtitle: "Configuration options documentation"
-        tag: "setup"
-        url: "https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md"
-      - name: "Theming"
-        icon: "fa-solid fa-palette"
-        subtitle: "Customize Homer appearance"
-        tag: "theming"
-        url: "https://github.com/bastienwirtz/homer/blob/main/docs/theming.md"
-      - name: "Smart cards"
-        icon: "fa-solid fa-palette"
-        subtitle: "Displays dynamic information or actions."
-        tag: "setup"
-        url: "https://github.com/bastienwirtz/homer/blob/main/docs/customservices.md"
-      - name: "Dashboard icons"
-        icon: "fa-solid fa-icons"
-        subtitle: "Dashboard icons"
-        tag: "setup"
-        url: "https://github.com/walkxcode/dashboard-icons"
+      - name: "Awesome app on a second page!"
+        logo: "assets/tools/sample.png"
+        subtitle: "Bookmark example"
+        tag: "app"
+        url: "https://www.reddit.com/r/selfhosted/"
+        target: "_blank"
